@@ -8,6 +8,7 @@ import java.io.IOException;
 public class FileHand {
 
 	public static void main(String[] args) {
+		
 		try {
 			
 			File f = new File("C:\\Users\\P3058727\\eclipse-workspace\\SGProject\\src\\com\\sg\\fileHandling\\prakhar.txt");	
@@ -29,14 +30,20 @@ public class FileHand {
 				bw.close();
 			}
 			catch(IOException e){
+				try {
+					//read a local file
+				}
+				catch(Exception t) {
+					t.printStackTrace();
+				}
 				e.printStackTrace();
 			}
+			
 			
 		}
 		catch(Exception e) {
 			e.printStackTrace();
 		}
-		
 		
 
 	}
